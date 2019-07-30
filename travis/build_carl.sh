@@ -1,5 +1,7 @@
 #!/bin/bash -x
 
+python -c 'import fcntl; fcntl.fcntl(1, fcntl.F_SETFL, 0)'
+
 N_JOBS=2
 TIMEOUT_LINUX=2300
 
